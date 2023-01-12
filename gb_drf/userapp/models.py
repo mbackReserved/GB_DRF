@@ -7,3 +7,4 @@ class User(models.Model):
     firstname = models.CharField(max_length=64)
     lastname = models.CharField(max_length=64)
     email = models.EmailField(unique=True)
+    birthday = models.PositiveIntegerField(default=None)
